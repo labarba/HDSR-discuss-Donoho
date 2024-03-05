@@ -57,7 +57,7 @@ The abstract should be no more than 250 words.
 
 It is said that science is advancing more rapidly than ever, due to the adherence to open sharing of data, code, methods and results. This may be true in some fields, but the reality is that the broad scientific community is still far from achieving frictionless reproducibility. I have many points of agreement with the article "Data Science at the Singularity" by David Donoho, but the scientific community needs to work harder to achieve the exemplars presented there. Challenges and opportunities in the pursuit of this ideal have to do with alignment of incentives, the need for better tools and platforms, training, and an unfinished cultural shift in the scholarly community.
 
-\section{Lines of Argument of the Article "Data Science at the Singularity" by David Donoho}
+\section{Discussion of the Article "Data Science at the Singularity" by David Donoho}
 \label{intro}
 David Donoho's perspective paper ``Data Science at the Singularity'' argues that a transformative shift has occurred in computational research towards what he terms \emph{frictionless reproducibility}. He says that the last decade has seen a remarkable acceleration in research progress in some fields, propelled by the maturation of three core data science principles: data sharing, code sharing, and competitive challenges, now implemented as frictionless open services. This new era of research is exemplified by the rapid advancements in empirical machine learning, which leverages frictionless reproducibility to markedly increase the pace of discovery and the spread of ideas. Donoho suggests that adhering to these principles allows for a seamless, efficient exchange of research outputs, fostering a community where innovation thrives on collective engagement and the iterative improvement of ideas.
 
@@ -74,9 +74,9 @@ Other scientific communities are similarly placing increasing importance on data
 Artifact Description appendices were independently reviewed in an innovative double-open peer-review process. Reviewers checked on the availability of the artifacts and determined eligibility for one of the three levels of recognition badges: artifacts available, artifacts evaluated, and results validated.\footnote{ACM Artifact Review and Badging Version 1.1 - August 24, 2020. \url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}}
 The SC Reproducibility Initiative is one of the early examples of a major computing conference in a field outside of machine learning developing policies to encourage and recognize reproducibility and open science practices. A survey of the community in 2020 showed that 90\% of respondents were aware of issues related to reproducibility in computational and computer science, and overall the initiative has had a positive impact on the quality of the science published at the conference \citep{plale2021reproducibility}.
 An inspection of the allocation reports of major computing resources in the US at the time, however, showed that hardly any of the projects awarded time on these supercomputers made code and data available \citep{barba2021trustworthy}.
-Today, a filter search in the ACM Digital Library for papers published in the past 5 years with an Artifacts Available badge returns 3,611 results, out of 726,224 records, or 0.5\% of the total.
+Today, a filter search in the ACM Digital Library for papers published in the past 5 years with an Artifacts Available badge returns 3,611 results, out of 726,224 records, or 0.5\% of the total; see Figure~\ref{fig:acm_badges_5years}.
 This is a clear indication that the cultural shift towards open science practices is still in progress, and that the community needs to work harder to achieve the exemplars presented in Donoho's article.
-And even when a compute-intensive research project is purposely open in its practices, such as the LIGO collaboration that led to the 2016 discovery of gravitational waves, authors report facing challenges in reproduction efforts, despite the availability of data and code supplementing the original publication \citep{brown2021reproducing}.
+And even when a compute-intensive research project is purposely open in its practices, such as the LIGO collaboration that led to the 2016 discovery of gravitational waves, authors report facing challenges in reproduction efforts, despite the availability of data and code supplementing the original publication \citep{brown2021reproducing}. The LIGO collaboration founded and curates the Gravitational Wave Open Science Center,\footnote{\url{http://gw-openscience.org}} which hosts data, software, documents and other tools for the community and public. Yet, when Brown et al.\ exercised the open data and code to reproduce the analysis of the signal detection, they came across omitted code versions and figure scripts in the research compendium. The challenges in reproducing the results of the LIGO discovery are a reminder that the ideal of frictionless reproducibility is still far from being achieved.
 
 \begin{figure}
     \centering
@@ -85,6 +85,9 @@ And even when a compute-intensive research project is purposely open in its prac
     \caption{Results from a filter search in the ACM Digital Library for papers published in the past 5 years with an Artifacts Available badge.}
     \label{fig:acm_badges_5years}
 \end{figure}
+
+
+
 
 % These commands need to appear at the point where you want
 % the first page to end.
