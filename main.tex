@@ -41,9 +41,9 @@
     }
   \vspace*{0.4in}
 
-\begin{abstract}
-The abstract should be no more than 250 words.
-\end{abstract}
+%\begin{abstract}
+%The abstract should be no more than 250 words.
+%\end{abstract}
 \end{center}
 
 \vspace*{0.15in}
@@ -71,22 +71,25 @@ Today, the NeurIPS code submission policy is still voluntary,\footnote{\url{http
 ICML author guidelines state that ``easy availability of code will be taken into account in the decision-making process'' while still being optional.\footnote{\url{https://icml.cc/Conferences/2024/AuthorInstructions}}
 
 Other scientific communities are similarly placing increasing importance on data and code sharing. On the same year that NeurIPS introduced the new role of Reproducibility Chair (2019), I held that same position in the committee of The International Conference on High-Performance Computing, Networking, Storage and Analysis, informally known as the Supercomputing conference, or SC.\footnote{\url{https://sc19.supercomputing.org/submit/reproducibility-initiative/}} We made it mandatory for all papers submitted to the SC19 Technical Program to include an appendix describing any digital artifacts associated with the research \citep{barba2021trustworthy}. The artifacts could be code, data, or other digital objects, and the appendix had to include a statement about the availability of these artifacts. 
-Artifact Description appendices were independently reviewed in an innovative double-open peer-review process. Reviewers checked on the availability of the artifacts and determined eligibility for one of the three levels of recognition badges: artifacts available, artifacts evaluated, and results validated.\footnote{ACM Artifact Review and Badging Version 1.1 - August 24, 2020. \url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}}
+Artifact Description appendices were independently reviewed in an innovative double-open peer-review process (while the paper underwent double-blind review). Reviewers checked on the availability of the artifacts and determined eligibility for one of the three levels of recognition badges: artifacts available, artifacts evaluated, and results validated.\footnote{ACM Artifact Review and Badging Version 1.1 - August 24, 2020. \url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}}
 The SC Reproducibility Initiative is one of the early examples of a major computing conference in a field outside of machine learning developing policies to encourage and recognize reproducibility and open science practices. A survey of the community in 2020 showed that 90\% of respondents were aware of issues related to reproducibility in computational and computer science, and overall the initiative has had a positive impact on the quality of the science published at the conference \citep{plale2021reproducibility}.
 An inspection of the allocation reports of major computing resources in the US at the time, however, showed that hardly any of the projects awarded time on these supercomputers made code and data available \citep{barba2021trustworthy}.
-Today, a filter search in the ACM Digital Library for papers published in the past 5 years with an Artifacts Available badge returns 3,611 results, out of 726,224 records, or 0.5\% of the total; see Figure~\ref{fig:acm_badges_5years}.
+Toda,\footnote{March 4, 2023} a filter search in the ACM Digital Library for papers published in the past 5 years with an Artifacts Available badge returns 3,611 results, out of 726,224 records, or 0.5\% of the total; see Figure~\ref{fig:acm_badges_5years}.
 This is a clear indication that the cultural shift towards open science practices is still in progress, and that the community needs to work harder to achieve the exemplars presented in Donoho's article.
 And even when a compute-intensive research project is purposely open in its practices, such as the LIGO collaboration that led to the 2016 discovery of gravitational waves, authors report facing challenges in reproduction efforts, despite the availability of data and code supplementing the original publication \citep{brown2021reproducing}. The LIGO collaboration founded and curates the Gravitational Wave Open Science Center,\footnote{\url{http://gw-openscience.org}} which hosts data, software, documents and other tools for the community and public. Yet, when Brown et al.\ exercised the open data and code to reproduce the analysis of the signal detection, they came across omitted code versions and figure scripts in the research compendium. The challenges in reproducing the results of the LIGO discovery are a reminder that the ideal of frictionless reproducibility is still far from being achieved.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.5]{acm_badges_5years-a} \\
-    \includegraphics[scale=0.5]{acm_badges_5years-b} \\
+    \includegraphics[scale=0.4]{acm_badges_5years-a} \\
+    \includegraphics[scale=0.45]{acm_badges_5years-b} \\
     \caption{Results from a filter search in the ACM Digital Library for papers published in the past 5 years with an Artifacts Available badge.}
     \label{fig:acm_badges_5years}
 \end{figure}
 
+The mature principle of data sharing, exemplified by open access to datasets across various disciplines, has certainly had enormous impact. This practice allows researchers to readily access, analyze, and build upon existing data, enhancing the reproducibility of research findings and fostering a culture of collaboration.
+The impact of such a culture of research data sharing is epitomized by the story of the Protein Data Bank (PDB), now an essential repository for structural data of biological molecules. Established in 1971, the PDB evolved over the years to become a global resource, freely accessible to the scientific community, which transformed the field of molecular biology. From its initial 7 molecular structures, the PDB reached a milestone of 200,000 entries in 2019,\footnote{\url{https://www.rcsb.org/news/639b9e337f8444f313d20414}} data that is used by researchers worldwide to understand the structure and function of biological macromolecules. Such scale enabled the application of machine learning techniques for protein-structure prediction, culminating in the success of DeepMind's AlphaFold algorithm, which won the Critical Assessment of Structure Prediction (CASP) competition in 2018 and 2020 \citep{jumper2021highly}. The PDB is a testament to the transformative power of open data sharing, and its success has inspired the creation of similar repositories across various scientific domains.
 
+The field of machine learning has its own stories of data-sharing success, one of the most famous of which is probably ImageNet. Founded by Professor Fei-Fei Li, the ImageNet database went from zero to three million categorized images in 2008, and reached more than 11 million images by mid-2010. That year saw the first ImageNet Large Scale Visual Recognition Challenge (ILSVRC), in which teams competed to programmatically categorize a subse of the images in the database. The competition, held annually until 2017, was a catalyst for the development of deep learning techniques.\footnote{\url{https://image-net.org/challenges/LSVRC/}} Like in the case of the PDB and the CASP challenge, ImageNet and the ILSVRC serve as example of the combined power of open data sharing and competitive challenges to drive innovation and discovery, as Donoho describes.
 
 
 % These commands need to appear at the point where you want
