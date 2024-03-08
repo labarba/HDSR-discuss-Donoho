@@ -20,7 +20,7 @@
 
 \begin{center}
 
-  \title{A Very Enticing Title}
+  \title{The path to frictionless reproducibility is still under construction}
   \maketitle
 
   % Start page numbering on second page. Must appear *after* \maketitle
@@ -57,9 +57,19 @@
 
 It is said that science is advancing more rapidly than ever, due to the adherence to open sharing of data, code, methods and results. This may be true in some fields, but the reality is that the broad scientific community is still far from achieving frictionless reproducibility. I have many points of agreement with the article "Data Science at the Singularity" by David Donoho, but the scientific community needs to work harder to achieve the exemplars presented there. Challenges and opportunities in the pursuit of this ideal have to do with alignment of incentives, the need for better tools and platforms, training, and an unfinished cultural shift in the scholarly community.
 
-\section{Discussion of the Article "Data Science at the Singularity" by David Donoho}
+\vspace{1cm}
+
+\section*{Discussion of the Article "Data Science at the Singularity" by David Donoho}
 \label{intro}
 David Donoho's perspective paper ``Data Science at the Singularity'' argues that a transformative shift has occurred in computational research towards what he terms \emph{frictionless reproducibility}. He says that the last decade has seen a remarkable acceleration in research progress in some fields, propelled by the maturation of three core data science principles: data sharing, code sharing, and competitive challenges, now implemented as frictionless open services. This new era of research is exemplified by the rapid advancements in empirical machine learning, which leverages frictionless reproducibility to markedly increase the pace of discovery and the spread of ideas. Donoho suggests that adhering to these principles allows for a seamless, efficient exchange of research outputs, fostering a community where innovation thrives on collective engagement and the iterative improvement of ideas.
+
+
+% These commands need to appear at the point where you want
+% the first page to end.
+\restoregeometry
+\newgeometry{bottom=0.5in}
+
+
 
 In the field of machine learning the practices of open sharing of data and code, and competitive challenges have become the standard at various conferences and publication venues.
 Many journals and top conferences, like NeurIPS (Neural Information Processing Systems), ICML (International Conference of Machine Learning), and ICLR (International Conference on Learning Representations), encourage or require authors to submit code and data along with their papers. 
@@ -91,14 +101,27 @@ The impact of such a culture of research data sharing is epitomized by the story
 
 The field of machine learning has its own stories of data-sharing success, one of the most famous of which is probably ImageNet. Founded by Professor Fei-Fei Li, the ImageNet database went from zero to three million categorized images in 2008, and reached more than 11 million images by mid-2010. That year saw the first ImageNet Large Scale Visual Recognition Challenge (ILSVRC), in which teams competed to programmatically categorize a subse of the images in the database. The competition, held annually until 2017, was a catalyst for the development of deep learning techniques.\footnote{\url{https://image-net.org/challenges/LSVRC/}} Like in the case of the PDB and the CASP challenge, ImageNet and the ILSVRC serve as example of the combined power of open data sharing and competitive challenges to drive innovation and discovery, as Donoho describes.
 
+David Donoho proposes that the synergistic combination of open data sharing, code sharing, and the organization of competitive challenges leads to unprecedented acceleration of computational research. When the global research community mobilizes to participate in competitions around shared datasets and agreed-upon benchmarks, the resulting collective engagement and iterative improvement of ideas leads to rapid progress: frictionless, and reproducible. He says this brings ``a drop to zero of the human effort required to reproduce a computational result.'' Let's see how this might be consummated.
 
-% These commands need to appear at the point where you want
-% the first page to end.
-\restoregeometry
-\newgeometry{bottom=0.5in}
+For Donoho's model of frictionless reproducibility to be practicable, several underlying tools and skills are presumed to exist within the community. These include:
 
-\section{Points of Agreement with the Article}
-Lorem ipsum 
+\begin{enumerate}
+    \item Data repositories and data-sharing platforms---these are essential for the storage, curation, and dissemination of research data. They should be designed to facilitate easy access, search, and retrieval of data, and should implement the FAIR principles (Findable, Accessible, Interoperable, Reusable) \citep{wilkinson2016fair}.
+    \item Code sharing and execution environments---these are platforms that allow researchers to share the code and the environment in which it was executed, and to execute code in a reproducible manner. They should capture the computational environment, including the software stack, libraries, and dependencies, and enable the sharing of the entire computational environment along with the code.
+    \item Virtualization and containerization technologies---these allow researchers to package their code and computational environment into a single, portable container that can be executed on any platform. They ensure that computational experiments can be re-executed in consistent environments, addressing the challenge of so-called ``dependency hell'' and environment reproducibility.
+    \item Collaborative development skills---these are key for developing shared code and contributing to data repositories. They include skills in version control, collaborative coding, and the use of collaborative platforms like GitHub, GitLab, or Bitbucket.
+    \item Data-management skills---these are required for curating, annotating, and sharing research data. They include skills in data management planning, metadata creation, data curation and understanding of archival practices including the use of global persistent identifiers.
+\end{enumerate}
+
+David Donoho's vision is compelling and merits broad support. I also want to be part of a future where scientific discovery is not just rapid but also transparent, reproducible, and accessible to a global community of researchers. However, the current state of affairs reveals significant gaps in both scholarly infrastructure and human capital that hinder the full realization of Donoho's model of frictionless reproducibility. While there has been progress in developing data repositories and code-sharing platforms, we face inconsistent standards, limited interoperability, and varying levels of sustainability of these resources. A lack of unified protocols and support can make it challenging for researchers to share and access data and code effectively. Moreover, while virtualization and containerization technologies have made strides, their adoption is far from universal, and many researchers face technical barriers to implementing these solutions. Finally, the skills needed for participating in this new ecosystem are not uniformly distributed across the research community. Collaborative development skills, data management proficiency, and the ability to navigate virtualization technologies are highly specialized and not typically part of traditional academic training. This creates a divide between those who can engage in these practices and those who cannot, potentially exacerbating disparities in research output and impact.
+
+The diffusion of Donoho's model relies on a skilled workforce adept in data management, software development, and collaborative research practices. But our current education and training programs are not equipping researchers with these interdisciplinary skills. Expanding training programs and integrating these skills into the curriculum of scientific and engineering disciplines is critical.
+Donoho acknowledges the lag in adapting educational programs to the demands of a data science and computationally literate workforce and the omissions in current academic curricula. An interdisciplinary approach to education may be needed, bridging the gap between computational sciences, statistics, and domain-specific knowledge. We may need to incorporate practical, hands-on experience through projects, internships, and collaborations with industry and research institutions. We should emphasize the importance of open science practices, including data and code sharing, and the principles of reproducible research. This can be achieved through coursework that requires students to share their own work in a reproducible manner and to critically evaluate the reproducibility of existing research.
+
+The current academic and research incentive structures, which prioritize novel findings and high-impact publications, may not adequately reward the time and effort spent on sharing data and code or on ensuring reproducibility. Revising incentive structures to recognize these contributions is necessary to foster a culture of open sharing and collaboration. This may involve recognizing data and code sharing as a scholarly output, and incorporating these contributions into hiring, promotion, and tenure decisions. It may also involve recognizing the value of reproducing and validating existing research, and rewarding researchers who engage in these activities. In my own experience, I have found that the recognition of open science practices in hiring and promotion decisions is still rare, and that the broader academic community is far from achieving the exemplars presented in Donoho's article.
+
+\section*{Conclusion}
+David Donoho's vision of frictionless reproducibility is a compelling model for the future of computational research. The principles of open data sharing, code sharing, and competitive challenges have already had a transformative impact on the field of machine learning, and have the potential to accelerate research progress across various scientific domains. However, the realization of this vision is contingent on the development of scholarly infrastructure and human capital that support these practices. We need to expand data repositories and code-sharing platforms, develop unified protocols and standards, and ensure the sustainability of these resources. We need to promote the adoption of virtualization and containerization technologies, and provide training and support to researchers who face technical barriers to implementing these solutions. Training programs are needed integrating interdisciplinary skills into the curriculum of scientific and engineering disciplines. Most of all, reform of academic and research incentive structures is needed to recognize the value of open science practices and reproducible research. Achieving these goals will require a concerted effort from the global research community, and the signs of change are not yet visible. The future of computational research is bright, but the path to frictionless reproducibility is still under construction.
 
 
 % 1. When figure position is crucial, use the [H] tag 
