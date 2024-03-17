@@ -53,13 +53,13 @@
   
 \copyrightnotice
 
-\section*{Media Summary}
+\section*{Are we there yet?}
 
 It is said that science is advancing more rapidly than ever, due to the adherence to open sharing of data, code, methods and results. This may be true in some fields, but the reality is that the broad scientific community is still far from achieving frictionless reproducibility. I have many points of agreement with the article "Data Science at the Singularity" by David Donoho, but the scientific community needs to work harder to achieve the exemplars presented there. Challenges and opportunities in the pursuit of this ideal have to do with alignment of incentives, the need for better tools and platforms, training, and an unfinished cultural shift in the scholarly community.
 
-\vspace{1cm}
 
-\section*{Discussion of the Article "Data Science at the Singularity" by David Donoho}
+
+\section*{Reduced friction for better acceleration}
 \label{intro}
 David Donoho's perspective paper ``Data Science at the Singularity'' argues that a transformative shift has occurred in computational research towards what he terms \emph{frictionless reproducibility} \citep{donoho2024data}. He says that the last decade has seen a remarkable acceleration in research progress in some fields, propelled by the maturation of three core data science principles: data sharing, code sharing, and competitive challenges, now implemented as frictionless open services. This new era of research is exemplified by the rapid advancements in empirical machine learning, which leverages frictionless reproducibility to markedly increase the pace of discovery and the spread of ideas. Donoho suggests that adhering to these principles allows for a seamless, efficient exchange of research outputs, fostering a community where innovation thrives on collective engagement and the iterative improvement of ideas.
 
@@ -69,7 +69,7 @@ David Donoho's perspective paper ``Data Science at the Singularity'' argues that
 \restoregeometry
 \newgeometry{bottom=0.5in}
 
-
+\section*{Pathways to open in machine learning research}
 
 In the field of machine learning the practices of open sharing of data and code, and competitive challenges have become the standard at various conferences and publication venues.
 Many journals and top conferences, like NeurIPS (Neural Information Processing Systems), ICML (International Conference of Machine Learning), and ICLR (International Conference on Learning Representations), encourage or require authors to submit code and data along with their papers. 
@@ -79,6 +79,8 @@ NeurIPS 2019 also for the first time experimented with a voluntary code submissi
 Also in 2019, the journal \emph{Nature Machine Intelligence} introduced a policy that when code is central to the results presented in the paper, the code must be made available to readers \citep{editorial2019naturemi}. The policy requires authors to include a Code Availability statement in the paper, describing how the code can be accessed and any applicable restrictions.
 Today, the NeurIPS code submission policy is still voluntary,\footnote{\url{https://web.archive.org/web/20240303205540/https://neurips.cc/public/guides/CodeSubmissionPolicy}} but the conference has published a set of best practices for sharing code, including a completeness checklist.\footnote{\url{https://github.com/paperswithcode/releasing-research-code}}
 ICML author guidelines state that ``easy availability of code will be taken into account in the decision-making process'' while still being optional.\footnote{\url{https://icml.cc/Conferences/2024/AuthorInstructions}}
+
+\section*{Reproducibility in computing taking off}
 
 Other scientific communities are similarly placing increasing importance on data and code sharing. On the same year that NeurIPS introduced the new role of Reproducibility Chair (2019), I held that same position in the committee of The International Conference on High-Performance Computing, Networking, Storage and Analysis, informally known as the Supercomputing conference, or SC.\footnote{\url{https://sc19.supercomputing.org/submit/reproducibility-initiative/}} We made it mandatory for all papers submitted to the SC19 Technical Program to include an appendix describing any digital artifacts associated with the research \citep{barba2021trustworthy}. The artifacts could be code, data, or other digital objects, and the appendix had to include a statement about the availability of these artifacts. 
 Artifact Description appendices were independently reviewed in an innovative double-open peer-review process (while the paper underwent double-blind review). Reviewers checked on the availability of the artifacts and determined eligibility for one of the three levels of recognition badges: artifacts available, artifacts evaluated, and results validated.\footnote{ACM Artifact Review and Badging Version 1.1 - August 24, 2020. \url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}}
@@ -96,10 +98,15 @@ And even when a compute-intensive research project is purposely open in its prac
     \label{fig:acm_badges_5years}
 \end{figure}
 
+
+\section*{Starting out with open data}
+
 The mature principle of data sharing, exemplified by open access to datasets across various disciplines, has certainly had enormous impact. This practice allows researchers to readily access, analyze, and build upon existing data, enhancing the reproducibility of research findings and fostering a culture of collaboration.
 The impact of such a culture of research data sharing is epitomized by the story of the Protein Data Bank (PDB), now an essential repository for structural data of biological molecules. Established in 1971, the PDB evolved over the years to become a global resource, freely accessible to the scientific community, which transformed the field of molecular biology. From its initial 7 molecular structures, the PDB reached a milestone of 200,000 entries in 2019,\footnote{\url{https://www.rcsb.org/news/639b9e337f8444f313d20414}} data that is used by researchers worldwide to understand the structure and function of biological macromolecules. Such scale enabled the application of machine learning techniques for protein-structure prediction, culminating in the success of DeepMind's AlphaFold algorithm, which won the Critical Assessment of Structure Prediction (CASP) competition in 2018 and 2020 \citep{jumper2021highly}. The PDB is a testament to the transformative power of open data sharing, and its success has inspired the creation of similar repositories across various scientific domains.
 
 The field of machine learning has its own stories of data-sharing success, one of the most famous of which is probably ImageNet. Founded by Professor Fei-Fei Li, the ImageNet database went from zero to three million categorized images in 2008, and reached more than 11 million images by mid-2010. That year saw the first ImageNet Large Scale Visual Recognition Challenge (ILSVRC), in which teams competed to programmatically categorize a subset of the images in the database. The competition, held annually until 2017, was a catalyst for the development of deep learning techniques.\footnote{\url{https://image-net.org/challenges/LSVRC/}} Like in the case of the PDB and the CASP challenge, ImageNet and the ILSVRC serve as example of the combined power of open data sharing and competitive challenges to drive innovation and discovery, as Donoho describes.
+
+\section*{Preparing  for the open road ahead}
 
 David Donoho proposes that the synergistic combination of open data sharing, code sharing, and the organization of competitive challenges leads to unprecedented acceleration of computational research. When the global research community mobilizes to participate in competitions around shared datasets and agreed-upon benchmarks, the resulting collective engagement and iterative improvement of ideas leads to rapid progress: frictionless, and reproducible. He says this brings ``a drop to zero of the human effort required to reproduce a computational result.'' Let's see how this might be consummated.
 
@@ -112,6 +119,8 @@ For Donoho's model of frictionless reproducibility to be practicable, several un
     \item Collaborative development skills---these are key for developing shared code and contributing to data repositories. They include skills in version control, collaborative coding, and the use of collaborative platforms like GitHub, GitLab, or Bitbucket.
     \item Data-management skills---these are required for curating, annotating, and sharing research data. They include skills in data management planning, metadata creation, data curation and understanding of archival practices including the use of global persistent identifiers.
 \end{enumerate}
+
+\section*{The road is under construction}
 
 David Donoho's vision is compelling and merits broad support. I too want to be part of a future where scientific discovery is not just rapid but also transparent, reproducible, and accessible to a global community of researchers. However, the current state of affairs reveals significant gaps in both scholarly infrastructure and human capital that hinder the full realization of Donoho's model of frictionless reproducibility. While there has been progress in developing data repositories and code-sharing platforms, we face inconsistent standards, limited interoperability, and varying levels of sustainability of these resources. A lack of unified protocols and support can make it challenging for researchers to share and access data and code effectively. Moreover, while virtualization and containerization technologies have made strides, their adoption is far from universal, and many researchers face technical barriers to implementing these solutions. Finally, the skills needed for participating in this new ecosystem are not uniformly distributed across the research community. Collaborative development skills, data management proficiency, and the ability to navigate virtualization technologies are highly specialized and not typically part of traditional academic training. This creates a divide between those who can engage in these practices and those who cannot, potentially exacerbating disparities in research output and impact.
 
@@ -136,7 +145,7 @@ David Donoho's vision of frictionless reproducibility is a compelling model for 
 
 
 \subsection*{Disclosure Statement}
-The authors have no conflicts of interest to declare.
+The author has no conflicts of interest to declare.
 
 %\subsection*{Acknowledgments}
 
